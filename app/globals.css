@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --font-league-spartan: 'League Spartan', sans-serif;
+}
+
+body {
+  font-family: var(--font-league-spartan);
+}

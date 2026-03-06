@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import BookingForm from "@/components/bookingform";
 
 export default function Contact() {
   const whatsappNumber = "254752612044";
@@ -21,76 +22,8 @@ export default function Contact() {
       <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
 
         {/* ================= CONTACT FORM ================= */}
-        <section className="bg-white border rounded-2xl p-8 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-6">
-            Request a Cleaning Service
-          </h2>
-
-          <form className="space-y-5">
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="Your full name"
-                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                placeholder="e.g. 07XXXXXXXX"
-                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Location / Address
-              </label>
-              <input
-                type="text"
-                placeholder="Your area in Nairobi"
-                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Service Needed
-              </label>
-              <select className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Residential Cleaning</option>
-                <option>Office & Shop Cleaning</option>
-                <option>Move-In / Move-Out Cleaning</option>
-                <option>Post-Construction Cleaning</option>
-                <option>Sofa, Carpet & Mattress Cleaning</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-1">
-                Message (Optional)
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Any special instructions?"
-                className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-            >
-              Request Service
-            </button>
-          </form>
+        <section>
+          <BookingForm />
         </section>
 
         {/* ================= WHATSAPP + CONTACT INFO ================= */}
@@ -132,7 +65,7 @@ export default function Contact() {
 
               <li className="flex items-center gap-3">
                 <Mail className="text-blue-600" size={20} />
-                <span>info@urbancleaning.co.ke</span>
+                <span>info.urbuncleaners@gmail.com</span>
               </li>
 
               <li className="flex items-center gap-3">

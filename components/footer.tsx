@@ -55,7 +55,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <Link
-              href="https://www.tiktok.com/@urbuncleaners.ke"
+              href="https://www.tiktok.com/@urbancleaners.ke"
               target="_blank"
               aria-label="TikTok"
               className="flex items-center gap-2 hover:text-pink-500 transition"

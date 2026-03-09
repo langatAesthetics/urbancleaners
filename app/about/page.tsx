@@ -1,5 +1,20 @@
 import Link from "next/link";
 import { CheckCircle, MapPin, Users, ShieldCheck } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Urban Cleaning Services",
+
+  description:
+    "Learn about Urban Cleaning Services, a trusted professional cleaning company in Nairobi offering residential, commercial, and specialized cleaning services with a focus on quality and customer satisfaction.",
+
+  keywords: [
+    "about Urban Cleaning Services",
+    "cleaning company Nairobi",
+    "professional cleaners Nairobi",
+    "trusted cleaning services Nairobi",
+  ],
+};
 
 export default function About() {
   return (

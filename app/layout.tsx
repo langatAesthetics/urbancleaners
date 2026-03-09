@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import Script from "next/script";
 import WhatsAppFloat from "@/components/whatsapp";
 import type { Viewport } from "next";
+import StructuredData from "@/components/structured-data";
 import "./globals.css";
 
 const leagueSpartan = League_Spartan({
@@ -21,28 +22,44 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Urban Cleaning Services | Residential & Office Cleaning in Nairobi",
+  metadataBase: new URL("https://urbancleaners.co.ke"),
+
+  title: {
+    default: "Urban Cleaning Services | Professional Cleaning in Nairobi",
+    template: "%s | Urban Cleaning Services",
+  },
+
   description:
-    "Urban Cleaning Services offers professional residential, office, move-in/move-out, post-construction, sofa, carpet, and mattress cleaning services in Nairobi, Rongai, Kasarani, Kiambu and surrounding areas. Fast. Fresh. Spotless.",
+    "Urban Cleaning Services provides professional residential and commercial cleaning in Nairobi, Rongai, Kasarani, Kiambu and nearby areas. We specialize in deep cleaning, sofa cleaning, carpet cleaning, mattress cleaning, and post-construction cleaning.",
+
   keywords: [
     "cleaning services Nairobi",
-    "residential cleaning Nairobi",
+    "professional cleaners Nairobi",
+    "home cleaning Nairobi",
     "office cleaning Nairobi",
-    "move in move out cleaning",
-    "post construction cleaning",
+    "deep cleaning Nairobi",
     "sofa cleaning Nairobi",
     "carpet cleaning Nairobi",
     "mattress cleaning Nairobi",
-    "deep cleaning services",
-    "Urban Cleaning Services",
+    "post construction cleaning Nairobi",
+    "move in move out cleaning Nairobi",
+    "Urban Cleaning Services Nairobi",
   ],
-  authors: [
-    {
-      name: "Urban Cleaning Services",
-    },
-  ],
+
+  authors: [{ name: "Urban Cleaning Services" }],
+
   icons: {
     icon: "/favicon.ico",
+  },
+
+  openGraph: {
+    title: "Urban Cleaning Services",
+    description:
+      "Professional residential and office cleaning services in Nairobi and surrounding areas.",
+    url: "https://urbancleaners.co.ke",
+    siteName: "Urban Cleaning Services",
+    locale: "en_KE",
+    type: "website",
   },
 };
 
@@ -55,8 +72,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
-
+        <StructuredData />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CHN42L0QDT"
@@ -72,6 +88,7 @@ export default function RootLayout({
     gtag('config', 'G-CHN42L0QDT');
   `}
         </Script>
+        {children}
         <WhatsAppFloat />
         <Footer />
       </body>

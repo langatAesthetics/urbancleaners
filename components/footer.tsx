@@ -29,7 +29,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-blue-500" />
-              <span>info.urbuncleaners@gmail.com</span>
+              <span>info.urbancleaners@gmail.com</span>
             </li>
           </ul>
         </div>

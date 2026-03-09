@@ -1,5 +1,20 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import BookingForm from "@/components/bookingform";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Urban Cleaning Services",
+
+  description:
+    "Contact Urban Cleaning Services today to book professional residential or office cleaning in Nairobi, Rongai, Kasarani, Kiambu and nearby areas. Fast response and affordable cleaning services.",
+
+  keywords: [
+    "contact cleaning services Nairobi",
+    "book cleaning Nairobi",
+    "cleaners near me Nairobi",
+    "Urban Cleaning Services contact",
+  ],
+};
 
 export default function Contact() {
   const whatsappNumber = "254752612044";
@@ -65,7 +80,7 @@ export default function Contact() {
 
               <li className="flex items-center gap-3">
                 <Mail className="text-blue-600" size={20} />
-                <span>info.urbuncleaners@gmail.com</span>
+                <span>info.urbancleaners@gmail.com</span>
               </li>
 
               <li className="flex items-center gap-3">

@@ -1,11 +1,8 @@
 import Link from "next/link";
-import {
-  Hammer,
-  Sofa,
-  CheckCircle,
-} from "lucide-react";
+import { Hammer, Sofa, CheckCircle,} from "lucide-react";
 import { ReactNode } from "react";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 interface ServiceBlockProps {
   icon: ReactNode;
@@ -19,6 +16,23 @@ interface ComparisonCardProps {
   features: string[];
   highlight?: boolean;
 }
+
+
+export const metadata: Metadata = {
+  title: "Cleaning Services in Nairobi",
+
+  description:
+    "Explore Urban Cleaning Services professional cleaning solutions including residential cleaning, office cleaning, sofa cleaning, carpet cleaning, mattress cleaning, move-in/move-out cleaning and post-construction cleaning in Nairobi.",
+
+  keywords: [
+    "cleaning services Nairobi",
+    "house cleaning Nairobi",
+    "office cleaning Nairobi",
+    "sofa cleaning services Nairobi",
+    "carpet cleaning Nairobi",
+    "deep cleaning services Nairobi",
+  ],
+};
 
 export default function Services() {
   return (
